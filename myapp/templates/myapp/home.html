@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<header class="outer">
+    <a href="#" class="logo">
+        <img src="https://static.naukri.com/s/4/100/i/naukriLogoIcon200.png" alt="" class="logo-img">
+        <h3 class="company-name"><i>MFC</i></h3>
+    </a>
+
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="{% url 'listing-page' %}">Details</a>
+       
+    </div>
+
+</header>
+<section class="main" background="bg.jpeg">
+    <div class="home-left">
+        <div class="content">
+        <h3 id="join"><i>Join with Us!!</i></h3>
+        <a href="{% url 'apply' %}">
+            <button class="aply"><i> Apply Now</i></button>
+        </a>
+        </div>
+        
+    </div>
+
+    <div class="home-right">
+        <img src="{% static 'images/bgimg.jpeg' %}" alt="">
+    </div>
+        
+   
+</section>
+<footer>
+    <div class="ftr">
+        <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+{% endblock %}

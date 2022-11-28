@@ -1,0 +1,102 @@
+body{
+    border: none;
+    margin: 0;
+}
+
+.outer{
+    display: flex;
+    background-color: #F637EC;
+    
+}
+
+.logo-img{
+    height: 75px;
+    width: 108px;
+}
+.logo{
+    display: flex;
+}
+
+.company-name{
+    font-size: 40px;
+    font-family: monospace;
+    
+    position: absolute;
+    left: 70px;
+    top: -27px;
+    color: rgb(39, 28, 136);
+}
+
+
+
+.nav{
+    position: relative;
+    left: 960px;
+    top: 31px;
+    display: flex;
+    gap: 35px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    word-spacing: 30px;
+    color: aliceblue;
+}
+
+.main{
+    display: flex;
+    background-color: rgb(2, 114, 179);;
+}
+
+.home-left{
+    background-color: rgb(2, 114, 179);
+    width: 30%;
+}
+
+.content{
+    position: relative;
+    left: 48px;
+    top: 165px;
+}
+
+/* join with us text */
+#join{
+    font-size: 60px;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(147, 234, 240);
+    text-shadow: 0px 0px 10px 10px;
+}
+
+.home-right{
+   width: 70%;
+}
+
+/* apply now button */
+.aply{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    left: 70px;
+    bottom: 22px;
+    font-size: 21px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(248, 58, 191);
+    box-shadow: 0px 0px 5px 2px aliceblue;
+    
+}
+
+.aply:hover{
+    background-color: rgb(230, 204, 89);
+}
+
+img{
+    width: fit-content;
+}
+
+
+

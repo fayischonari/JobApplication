@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+}
+.container {
+    width: auto;
+    height: auto;
+    background-color: rgb(210, 201, 243);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-heading {
+    text-align: center;
+}
+
+/* form field box */
+.box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: rgb(223, 224, 224);
+    width: 70%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px gray;
+}
+
+.registration-fields {
+    width: 100%;
+    margin: auto;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 30px;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    outline: 2px solid #fff;
+    width: 80%;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    margin-top: 10px;
+    margin-left: 9%;
+    vertical-align: middle;
+    margin-top: -1px;
+    color: #030303;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* label jumping effect */
+.input:focus + .input-label,
+.input:valid + .input-label {
+     transform: 
+        translate(10px, -22px) scale(1); 
+    color: #000000;
+    padding-inline: 5px;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #d1c5fc;
+}
+
+#address {
+    height: 133px;
+    border: none;
+}
+
+select option:nth-child(-n+1){ 
+    display:none;
+}
+
+.gen p{
+    margin-left: 78px;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.gender{
+    font-size: 15px;
+}
+
+.gender-label-opt{
+    margin-left: 20px;
+}
+
+.input-group #gender{
+    display: inline;
+}
+
+.input-group #gender-label{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    margin-left: -40%;
+}
+
+label[for='female_0']{
+    display: none;
+}
+
+label[for='female_1']{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+label[for='female_2']{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+label[for='female_3']{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    margin-left: 35px;
+    gap: 35px;
+}
+
+p, ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#job {
+    width: 83%;
+    margin-top: 10px;
+}
+
+#jobrole-label{
+    margin-right: 70%;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#experience{
+    margin-top: 1px;
+}
+
+#experience-label{
+    margin-right: 73%;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#linkedin{
+    margin-top: 49px;
+}
+
+.error {
+    margin-right: 64%;
+    color: red;
+}
+
+#phoneerror{
+    margin-right: 57%;
+}
+
+#ageerror{
+    margin-left: 35px;
+}
+
+#submit {
+    height: 46px;
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(52, 199, 47);
+    border: none;
+    box-shadow: 0px 0px 3px 1px gray;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#submit:is(:hover,:focus){
+    outline: 2px solid rgb(7, 88, 38);
+    outline-offset: 2px;
+} 
+
+
+
+
+
+
+
+
+
+
+    
+
+
+

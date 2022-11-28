@@ -1,0 +1,71 @@
+{% extends "base1.html" %}
+
+{% block content %}
+{% load static %}
+<div class="main">
+    <div class="container">
+        <h2 class="form-heading"> Please fill your details here </h2>
+        <div class="box">
+            <div class="registration-fields">
+                <form action="" method="POST" id="form" autocomplete="off">
+                    {% csrf_token %}
+                    {{form.error}}
+                    <div class="input-group">
+                        {{form.name}}
+                        <label for="name" class="input-label">Name</label><br>
+                        <span id="nameerror" class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        {{form.email}}
+                        <label for="email" class="input-label">Email</label><br>
+                        <span id="emailerror" class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        {{form.phone}}
+                        <label for="phone" class="input-label">Phone </label><br>
+                        <span id="phoneerror" class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        {{form.address}}
+                        <label for="address" class="input-label">Address</label><br>
+                        <span id="addresserror" class="error"></span>
+                    </div>
+                    <div class="input-group">
+                        {{form.dob}}
+                        <label for="name" class="input-label" onblur="validateage()">Date of Birth</label>
+                        <br>
+                        <span id="ageerror" class="error"></span>
+                    </div>
+                    <div class="gen">
+                        <div id="gender" class="input-group">
+                            <p>Gender :</p>
+                            {{form.gender}}
+                        </div>
+                    </div><br>
+                    <div class="input-group">
+                        <label for="job" id="jobrole-label">Select job role:</label><br>
+                        {{form.jobrole}}
+                        <br>
+                        <span id="jobroleerror" class="error"></span>
+                    </div>
+
+                    <div class="input-group" id="experience">
+                        <label for="experience" id="experience-label">Experience:</label><br>
+                        {{form.experience}}
+                        <br>
+                    </div>
+                    <div class="input-group" id="linkedin">
+                        {{form.linkedin}}
+                        <label for="linkedin" class="input-label">LinkedIn URL</label><br>
+                        <span id="nameerror" class="error"></span>
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
